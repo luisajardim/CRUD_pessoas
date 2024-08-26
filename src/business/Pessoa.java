@@ -66,19 +66,27 @@ public class Pessoa {
     return altura;
   }
   public void setAltura(float altura) {
-    this.altura = altura;
+    if (altura >0 && altura < 2.6f){
+      this.altura = altura;
+    }
+    
   }
   public int getPeso() {
     return peso;
   }
   public void setPeso(int peso) {
-    this.peso = peso;
+    if (peso > 0 && peso < 600f) {
+      this.peso = peso;
+    }
+    
   }
   public float getRenda() {
     return renda;
   }
   public void setRenda(float renda) {
-    this.renda = renda;
+    if (renda >= 0){
+      this.renda = renda;
+    }
   }
   public String getNaturalidade() {
     return naturalidade;

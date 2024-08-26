@@ -47,9 +47,7 @@ public class Pessoa {
         && nome.matches(
             "[\\p{L} ]+")) { // \p{L} permite qualquer letra de qualquer idioma, incluindo acentos
       this.nome = nome;
-    } else {
-      throw new IllegalArgumentException("Nome inválido. Deve conter apenas letras e espaço.");
-    }
+    } 
   }
 
   public LocalDate getDataNascimento() {
